@@ -9,7 +9,7 @@ class podrazdel;
 class sotrudnik
 {
 	string fio;
-	char stcom; // 0.не был, 1.отправлен, 2.вернулся, 3.была оплачена
+	char stcom; // 0.РЅРµ Р±С‹Р», 1.РѕС‚РїСЂР°РІР»РµРЅ, 2.РІРµСЂРЅСѓР»СЃСЏ, 3.Р±С‹Р»Р° РѕРїР»Р°С‡РµРЅР°
 	bool prem; //0....
 	double oklad;
 	podrazdel *pPodr;

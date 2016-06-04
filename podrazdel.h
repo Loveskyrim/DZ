@@ -22,7 +22,7 @@ public:
 	void AddSotr(sotrudnik& sotr, ostream& out);
 	void PrintInFile(ostream& fout);
 	void readFromFile(istream& fin,  ostream& out);
-	double getZarp(); // Получение суммы зарплаты для подразделения
+	double getZarp(); // РџРѕР»СѓС‡РµРЅРёРµ СЃСѓРјРјС‹ Р·Р°СЂРїР»Р°С‚С‹ РґР»СЏ РїРѕРґСЂР°Р·РґРµР»РµРЅРёСЏ
 	string & getName();
 	void setprimiy(double sum);
 	podrazdel& operator+(sotrudnik& st);

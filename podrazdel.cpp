@@ -48,14 +48,14 @@ void podrazdel::print()
 }
 
 podrazdel& podrazdel::operator+(sotrudnik& st)
-{  // Сотрудник не включен в другое подразделение
+{  // РЎРѕС‚СЂСѓРґРЅРёРє РЅРµ РІРєР»СЋС‡РµРЅ РІ РґСЂСѓРіРѕРµ РїРѕРґСЂР°Р·РґРµР»РµРЅРёРµ
 	listst.push_back(st);
 	st.pPodr=this;
 	return *this;
 }
 
 podrazdel& podrazdel::operator-(sotrudnik& st)
-{  // Поиск сотрудника
+{  // РџРѕРёСЃРє СЃРѕС‚СЂСѓРґРЅРёРєР°
 	list<sotrudnik>::iterator pos;
 	for(pos=listst.begin(); pos!=listst.end(); ++pos)
 		if ((*pos).GetFio()==st.GetFio()) {
@@ -94,7 +94,7 @@ string & podrazdel::getName()
 	return name;
 }
 
-double podrazdel::getZarp() // Получение суммы зарплаты для подразделения
+double podrazdel::getZarp() // РџРѕР»СѓС‡РµРЅРёРµ СЃСѓРјРјС‹ Р·Р°СЂРїР»Р°С‚С‹ РґР»СЏ РїРѕРґСЂР°Р·РґРµР»РµРЅРёСЏ
 {
 	double sum=0;
 	for(auto pos: listst)
