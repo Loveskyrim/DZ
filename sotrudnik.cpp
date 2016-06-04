@@ -4,7 +4,7 @@
 
 sotrudnik::sotrudnik(void)
 {
-	stcom=rand() % 4;// Командировка
+	stcom=rand() % 4;// РљРѕРјР°РЅРґРёСЂРѕРІРєР°
 }
 
 sotrudnik::sotrudnik(string fio1)
@@ -12,7 +12,7 @@ sotrudnik::sotrudnik(string fio1)
 	fio=fio1;
 //	oklad=oklad1;
 	//pPodr=p;
-	stcom=rand() % 4;// Командировка
+	stcom=rand() % 4;// РљРѕРјР°РЅРґРёСЂРѕРІРєР°
 }
 
 	void sotrudnik::Print()
@@ -44,13 +44,13 @@ sotrudnik::sotrudnik(string fio1)
 		return stcom;
 	}
 
-	sotrudnik::sotrudnik(string name1, double oklad1, podrazdel *p) // Конструктор включает сотрудника в подразделение
+	sotrudnik::sotrudnik(string name1, double oklad1, podrazdel *p) // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РІРєР»СЋС‡Р°РµС‚ СЃРѕС‚СЂСѓРґРЅРёРєР° РІ РїРѕРґСЂР°Р·РґРµР»РµРЅРёРµ
 		{
 			fio=name1;
 			oklad=oklad1;
 			pPodr=p;
 			pPodr->listst.push_back(*this);
-			stcom=rand() % 4;// Командировка
+			stcom=rand() % 4;// РљРѕРјР°РЅРґРёСЂРѕРІРєР°
 			if (rand() % 2) prem=true;
 			else prem=false;
 		}
@@ -63,11 +63,11 @@ sotrudnik::sotrudnik(string fio1)
 		return fio;
 	}
 
-	sotrudnik::sotrudnik(string name1, double oklad1) // Конструктор создает сотрудника без подразделения
+	sotrudnik::sotrudnik(string name1, double oklad1) // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃРѕР·РґР°РµС‚ СЃРѕС‚СЂСѓРґРЅРёРєР° Р±РµР· РїРѕРґСЂР°Р·РґРµР»РµРЅРёСЏ
 		{
 			fio=name1;
 			oklad=oklad1;
-			stcom=rand() % 4;// Командировка
+			stcom=rand() % 4;// РљРѕРјР°РЅРґРёСЂРѕРІРєР°
 			if (rand() % 2) prem=true;
 			else prem=false;
 		}
@@ -81,7 +81,7 @@ sotrudnik::sotrudnik(string fio1)
 	void sotrudnik::SetOklad(double newOkl, ostream& out)
 	{
 		oklad=newOkl;
-		out << endl << "Изменение оклада сотрудника " << fio << " Новый оклад: " << oklad ;
+		out << endl << "РР·РјРµРЅРµРЅРёРµ РѕРєР»Р°РґР° СЃРѕС‚СЂСѓРґРЅРёРєР° " << fio << " РќРѕРІС‹Р№ РѕРєР»Р°Рґ: " << oklad ;
 
 	}
 
@@ -89,7 +89,7 @@ sotrudnik::sotrudnik(string fio1)
 	{
 		pPodr=p;
 		pPodr->listst.push_back(*this);
-		out << endl << "Сообщение об изменении" ;///////
+		out << endl << "РЎРѕРѕР±С‰РµРЅРёРµ РѕР± РёР·РјРµРЅРµРЅРёРё" ;///////
 	}
 
 		void sotrudnik::AddtoPodr(podrazdel *p, double oklad1, ostream& out)
@@ -97,7 +97,7 @@ sotrudnik::sotrudnik(string fio1)
 			oklad=oklad1;
 			pPodr=p;
 			pPodr->listst.push_back(*this);
-			out << endl << "Сообщение об изменении" ;///////
+			out << endl << "РЎРѕРѕР±С‰РµРЅРёРµ РѕР± РёР·РјРµРЅРµРЅРёРё" ;///////
 		}
 
 
